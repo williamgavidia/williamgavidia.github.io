@@ -1,0 +1,52 @@
+# Build settings
+permalink   : /blog/:year/:title/
+markdown    : kramdown
+
+
+paginate: 3
+paginate_path: "/blog/page/:num/"
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed # expanded
+
+# SEO settings
+title: Sasuke
+description: "Un Espacio abierto e interactivo, dedicado a la tecnologia"
+keywords: "Jekyll, theme, free, download, SEO, blog, web"
+# url:
+baseurl: "/sasukeuchiha"
+# baseurl: ""
+
+# google_analytics: UA-67547904
+repo: https://github.com/williamgavidia
+disqus_shortname: "williangavidia"
+
+# Author settings
+author:
+  name      : Wuilliam Gavidia
+  job       : Ing. en Informatica
+  bio       : "Alegre, Confiado, Creativo"
+  thumb     : /images/author.jpg
+  email     : zerpaw@gmail.com
+  github    : https://github.com/williamgavidia
+  twitter   : https://twitter.com/Wzerpa_g
+  facebook  : https://www.facebook.com/wgavidia
+  google    : https://plus.google.com/u/0/113448606606456062686/about/p/pub
+
+# navbar pages
+navbar:
+  - slug: about
+    title: Acerca de mi
+  # - slug: skills
+  #   title: Skills
+  - slug: blog
+    title: Blog
+  - slug: categorias
+    title: Categoria
+
+gems: ["jekyll-paginate"]
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]

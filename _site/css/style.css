@@ -1,0 +1,10 @@
+strong {
+	font-weight: bold;
+}
+
+.center {
+	display: block;
+
+	margin: 0 auto;
+}
+

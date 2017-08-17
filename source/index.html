@@ -1,0 +1,21 @@
+---
+layout: home
+---
+
+<section class="hero">
+
+  <div class="hero-inner container">
+
+    <img src="{{ site.author.thumb | prepend: site.baseurl }}" alt="author thumb" class="dot">
+    <h1>Hola!..</h1>
+    <h3>Mi Nombres es <strong itemprop="name">{{ site.author.name }}</strong>, soy <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3>
+    <h3>{{ site.author.bio }}</h3>
+
+    <a href="{{ '/about' | prepend: site.baseurl }}" class="btn btn-ghost">Acerca de mi</a>
+    <a href="{{ '/blog' | prepend: site.baseurl }}" class="btn btn-ghost">Blog</a>
+
+    {% include social.html %}
+
+  </div>
+
+</section>
