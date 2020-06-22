@@ -1,29 +1,33 @@
 # Build settings
-permalink   : /blog/:year/:title/
-markdown    : kramdown
+permalink: /blog/:year/:title/
+markdown: kramdown
+highlighter: pygments
+plugins: [jekyll-paginate-v2]
 
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: "/page/:num/"
 
-paginate: 3
-paginate_path: "/blog/page/:num/"
 comments: true
 
 source: source
 destination: _site
 sass:
-  sass_dir: _scss
+  sass_dir: _sass
   style: compressed # expanded
 
 # SEO settings
 title: Sasuke
 description: "Un Espacio abierto e interactivo, dedicado a la tecnologia"
 keywords: "Jekyll, theme, free, download, SEO, blog, web"
-# url:
-baseurl: "/sasukeuchiha"
-# baseurl: ""
+url: https://williamgavidia.github.io
+baseurl: ""
 
-# google_analytics: UA-67547904
-repo: https://github.com/williamgavidia
-disqus_shortname: "williangavidia"
+google_analytics: UA-XXXXXXXX-X
+repo: https://github.com/williamgavidia/williamgavidia.github.io
+disqus_shortname: "williamgavidia"
+disqus_site_shortname: "williamgavidia"
 
 # Author settings
 author:
@@ -35,18 +39,15 @@ author:
   github    : https://github.com/williamgavidia
   twitter   : https://twitter.com/Wzerpa_g
   facebook  : https://www.facebook.com/wgavidia
-  google    : https://plus.google.com/u/0/113448606606456062686/about/p/pub
+  linkedin  : https://linkedin.com/in/williamgavidia
 
 # navbar pages
 navbar:
   - slug: about
-    title: Acerca de mi
-  # - slug: skills
-  #   title: Skills
+    title: About
+  - slug: icons
+    title: Icons
   - slug: blog
     title: Blog
-  - slug: categorias
-    title: Categoria
 
-gems: ["jekyll-paginate"]
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]

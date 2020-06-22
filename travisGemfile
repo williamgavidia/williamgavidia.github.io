@@ -1,8 +1,14 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
-source 'http://rubygems.org'
+source "https://rubygems.org"
 
-gem 'liquid'
-gem 'redcarpet'
-gem 'github-pages'
-gem 'jekyll'
+gem "rake"
+gem "sass"
+gem "json"
+gem "redcarpet"
+gem "pygments.rb"
+gem "jekyll-compose"
+gem "kramdown"
+
+gem "github-pages", group: :jekyll_plugins
+gem "bourbon", group: :jekyll_plugins
+gem "jekyll-feed", group: :jekyll_plugins
+gem "jekyll-paginate", group: :jekyll_plugins

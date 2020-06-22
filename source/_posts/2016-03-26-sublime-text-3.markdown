@@ -22,26 +22,26 @@ Para instalar el editor, solo hay que agregar un repositorio donde se encuentra 
 
 
 
-{% highlight PowerShell %}
+```shell-session
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
-{% endhighlight %}
+```
 
 
 Luego hacemos una actualización de todas las cabeceras de los repositorios que tenemos (algo muy rápido). 
 
  
-{% highlight PowerShell %}
+```shell-session
 $ sudo apt-get update
-{% endhighlight %}
+```
 
 
 Luego realizamos la instalación del software con la siguiente línea: 
 
  
 
-{% highlight PowerShell %}
+```shell-session
 sudo apt-get install sublime-text-installer
-{% endhighlight %}
+```
 
 <br>
 
