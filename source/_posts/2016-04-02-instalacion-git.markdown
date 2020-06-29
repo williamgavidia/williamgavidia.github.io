@@ -26,15 +26,15 @@ A continuación veremos como instalar Git:<br><br>
 Para instalar Git, necesitas tener las siguientes librerías de las que Git depende: curl, zlib, openssl, expat y libiconv. Por ejemplo, si estás en un sistema que tiene yum (como <strong>Fedora</strong> ) o apt-get (como un sistema basado en <strong>Debian</strong>), puedes usar estos comandos para instalar todas las dependencias:<br>
 
 
-{% highlight ruby %}
+```shell-session
 $ yum install curl-devel expat-devel gettext-devel \
   openssl-devel zlib-devel
-{% endhighlight %}
+```
 
-{% highlight ruby %}
+```shell-session
 $ apt-get install libcurl4-gnutls-dev libexpat1-dev gettext \
   libz-dev libssl-dev
-{% endhighlight %}
+```
 
 <br>
 
@@ -45,76 +45,76 @@ Si quieres instalar Git en Linux a través de un instalador binario, en general 
 
 
 #### Fedora
-{% highlight ruby %}
+```shell-session
 $ yum install git (Hasta Fedora 21)
-{% endhighlight %}
+```
 
 o
 
-{% highlight ruby %}
+```shell-session
 $ dnf install git (Fedora 22 y posteriores)
-{% endhighlight %}
+```
 
 <br>
 
 #### Debian/Ubuntu
-{% highlight ruby %}
+```shell-session
 $ apt-get install git
-{% endhighlight %}
+```
 
 <br>
 
 #### Gentoo
 
 
-{% highlight ruby %}
+```shell-session
 $ emerge --ask --verbose dev-vcs/git
-{% endhighlight %}
+```
 
 
 <br>
 
 #### Arch Linux
 
-{% highlight ruby %}
+```shell-session
 $ pacman -S git
-{% endhighlight %}
+```
 
 <br>
 
 #### openSUSE
-{% highlight ruby %}
+```shell-session
 $ zypper install git
-{% endhighlight %}
+```
 
 <br>
 
 #### FreeBSD
 
 
-{% highlight ruby %}
+```shell-session
 $ cd /usr/ports/devel/git
-{% endhighlight %}
+```
 
 
-{% highlight ruby %}
+```shell-session
 $ make install
-{% endhighlight %}
+```
 
 <br>
 
 #### Solaris 11 Express
 
-{% highlight ruby %}
+```shell-session
 $ pkg install developer/versioning/git
-{% endhighlight %}
+```
 
 <br>
 
 #### OpenBSD
-{% highlight ruby %}
+```shell-session
 $ pkg_add git
-{% endhighlight %}
+```
 
 <br>
 

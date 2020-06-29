@@ -1,8 +1,0 @@
-git:
-  name: "Control de Versiones"
-  description: "Es la gestión de los diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo. Una versión, revisión o edición de un producto, es el estado en el que se encuentra el mismo en un momento dado de su desarrollo o modificación."
-
-programacion:
-  name: "Programación"
-  description: "Es el proceso de diseñar, codificar, depurar y mantener el código fuente de programas computacionales. "
-

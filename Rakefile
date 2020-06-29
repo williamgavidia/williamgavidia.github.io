@@ -3,13 +3,14 @@ require "rubygems"
 require "tmpdir"
 require "bundler/setup"
 require "jekyll"
+require "bourbon"
 
 # Change your GitHub reponame
-GITHUB_REPONAME    = "williamgavidia/williamgavidia.github.io"
+GITHUB_REPONAME = "nandomoreirame/end2end"
 GITHUB_REPO_BRANCH = "gh-pages"
 
 SOURCE = "source/"
-DEST   = "_site"
+DEST = "_site"
 CONFIG = {
   'layouts' => File.join(SOURCE, "_layouts"),
   'posts' => File.join(SOURCE, "_posts"),

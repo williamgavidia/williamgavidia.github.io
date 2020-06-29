@@ -23,9 +23,9 @@ Sirve para modificar el log de un commit, por ejemplo imagínate que escribiste 
 
 Modificando el log del último commit que hayamos realizado:<br><br>
 
-{% highlight ruby %}
+```shell-session
 git commit --amend
-{% endhighlight %} <br>
+```
 
 
 Luego podremos editar el último commit y si deseamos corregir algún error que hayamos cometido.<br><br>
@@ -35,9 +35,9 @@ Luego podremos editar el último commit y si deseamos corregir algún error que 
 Sirve para <strong>abortar un merge</strong> en curso, se usa para deshacer un merge fallido, lo que quiere decir es que solo puedes abortar un merge y regresar todo a la normalidad cuando el merge ha fallado y tiene conflictos.<br><br>
 
 
-{% highlight ruby %}
+```shell-session
 git merge --abort 
-{% endhighlight %} <br>
+```
 
 
 
@@ -48,57 +48,57 @@ Sirve para crear, listar, eliminar ramas y algunas opciones más.<br><br>
 Creando una rama local:
 
 
-{% highlight ruby %}
+```shell-session
 git branch nombre_rama
-{% endhighlight %} <br>
+```
 
 
 
 Listando ramas locales:
 
-{% highlight ruby %}
+```shell-session
 git branch
-{% endhighlight %} <br>
+```
 
 
 
 Listando ramas remotas:
 
-{% highlight ruby %}
+```shell-session
 git branch -r
-{% endhighlight %} <br>
+```
 
 
 
 Eliminando una rama local:
 
-{% highlight ruby %}
+```shell-session
 git branch -d nombre_rama
-{% endhighlight %} <br>
+```
 
 
 
 Forzar la eliminación de una rama local:
 
-{% highlight ruby %}
+```shell-session
 git branch -D nombre_rama
-{% endhighlight %} <br>
+```
 
 
 
 Cambiar de nombre a una rama local, estando en la misma rama:
 
-{% highlight ruby %}
+```shell-session
 git branch -m nombre_nuevo
-{% endhighlight %} <br>
+```
 
 
 
 Cambiar de nombre a una rama local, estando en otra rama:
 
-{% highlight ruby %}
+```shell-session
 git branch -m nombre_anterior nombre_nuevo
-{% endhighlight %} <br>
+```
 
 
 
@@ -109,16 +109,16 @@ Asi los cambios que realizaste se han guardado en una rama temporal de `Git` y l
 
 Guardando o escondiendo mis cambios:
 
-{% highlight ruby %}
+```shell-session
 git stash
-{% endhighlight %} <br>
+```
 
 
 Recuperando mis cambios guardados o escondidos anteriormente:
 
-{% highlight ruby %}
+```shell-session
 git stash apply
-{% endhighlight %} <br>
+```
 
 
 # 5. GIT TAGS
@@ -128,30 +128,30 @@ Generalmente la gente usa esta funcionalidad para marcar puntos donde se ha lanz
 
 Listando tus etiquetas (<strong>lo hace alfabéticamente por defecto</strong> ):
 
-{% highlight ruby %}
+```shell-session
 git tag
-{% endhighlight %} <br>
+```
 
 
 Buscando una etiqueta de acuerdo a un patrón en particular:
 
-{% highlight ruby %}
+```shell-session
 git tag -l 'v7.3.*'
-{% endhighlight %} <br>
+```
 
 
 Creando una nueva etiqueta:
 
-{% highlight ruby %}
+```shell-session
 git tag -a v1.0.0 -m "CU: Agregando la Tipografia"
-{% endhighlight %} <br>
+```
 
 
 Enviando una etiqueta al servidor:
 
-{% highlight ruby %}
+```shell-session
 git push origin tag v1.0.0
-{% endhighlight %} <br>
+```
 
 
 # 6. GIT SHOW
@@ -160,9 +160,9 @@ Muestra información de varios tipos de objetos Git.
 
 Mostrando la información del tag `v1.0.0` en forma corta (<strong>-s de short</strong>):
 
-{% highlight ruby %}
+```shell-session
 git show v1.0.0 -s
-{% endhighlight %} <br>
+```
 
 
 # 7. GIT CONFIG
@@ -171,51 +171,51 @@ A través de este comando podemos leer y escribir las configuraciones de Git par
 
 Definiendo el nombre con que será identificado la persona que realiza los commits:
 
-{% highlight ruby %}
+```shell-session
 git config --global user.name "Wuilliam Gavidia"
-{% endhighlight %} <br>
+```
 
 
 Definiendo el email del commiter:
 
-{% highlight ruby %}
+```shell-session
 git config --global user.email "zerpaw@gmail.com"
-{% endhighlight %} <br>
+```
 
 
 Definiendo el `editor de texto` con el que trabajará Git (en este caso elijo [Vim][vim]):
 
-{% highlight ruby %}
+```shell-session
 git config --global core.editor vim
-{% endhighlight %} <br>
+```
 
 
 Definiendo [Meld][meld] como herramienta para la solución de conflictos en un merge:
 
-{% highlight ruby %}
+```shell-session
 git config --global merge.tool meld
-{% endhighlight %} <br>
+```
 
 
 Definiendo el alias `“st”` para Git:
 
-{% highlight ruby %}
+```shell-session
 git config --global alias.st status
-{% endhighlight %} <br>
+```
 
 
 Con esto he definido el alias `“st”`, para que en vez de escribir:
 
-{% highlight ruby %}
+```shell-session
 git status
-{% endhighlight %} <br>
+```
 
 
 Tan solo escriba:
 
-{% highlight ruby %}
+```shell-session
 git st
-{% endhighlight %} <br>
+```
 
 
 Espero que de verdad les sirva de algo estos comando [Git][git], son pocos pero realmente valiosos, estoy seguro de que te servirán mas de uná vez. Suerte!!!
